@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <script type="text/javascript" src="js/detectmobile.js"></script>
+    <title>NSA Haiku Generator</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/social.js"></script>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-45087617-1', 'nsahaiku.net');
+        ga('send', 'pageview');
+
+    </script>
+
+
+</head>
+
+<body>
+
+    <div id="title">
+
+    </div>
+
+    <div id="haiku_container" class="gen_haiku">
+        <div id="haiku">
+            &nbsp; <br> &nbsp; <br> &nbsp; <br> &nbsp;
+        </div>
+    </div>
+
+    <div id="social_container">
+        <div id="social_stuff">
+            <a onclick="email(htmlpoem)" href="javascript:void(0);"><img src="images/social/email.png"></a><a
+                onclick="facebook(fullpoem)" href="javascript:void(0);"><img src="images/social/facebook.png"></a><a
+                onclick="twitter(twitterpoem)" href="javascript:void(0);"><img src="images/social/twitter.png"
+                    id="soc_right"></a><a onclick="barack(fullpoem)" href="javascript:void(0);"><img
+                    src="images/social/barack.png"></a>
+
+        </div>
+    </div>
+
+    <div id="curtain">
+    </div>
+
+    <div id="click_info">
+
+    </div>
+
+    <script type="text/javascript" src="js/mobile.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+
+
+    <meta name="description"
+        content="Make your own haiku out of the NSA search term database they use to keep track of YOU!">
+    <meta name="keywords"
+        content="PRISM, NSA, Grayson, Earle, javascript, nsa haiku generator, haiku, generator, nsahaiku">
+    <meta name="author" content="Grayson Earle">
+    <meta name="thumbnail" content="http://nsahaiku.net/images/thumb.png" />
+    <meta property="og:image" content="http://nsahaiku.net/images/thumb.png" />
+    <link rel="image_src" href="http://nsahaiku.net/images/thumb.png" />
+    <meta charset="UTF-8">
+
+    <script type="text/javascript" src="js/detectmobile.js"></script>
+
+    <script>
+        try {
+            // This is the URL where mobile
+            detectmobile.defaultMobileURL = "http://www.nsahaiku.net/mobile.html";
+            detectmobile.process();
+        } catch (e) {
+            // Make sure that in the fault modes
+            // we do not interrupt execution of other Javascript code
+        }
+    </script>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NSA Haiku Generator</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+
+    <link rel="author" href="https://plus.google.com/u/0/107899949510566244109/posts/">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/social.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P72VPTXQDK"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P72VPTXQDK');
+    </script>
+
+</head>
+
+<body>
+
+    <div id="title">
+
+    </div>
+
+    <div id="haiku_container" class="gen_haiku">
+        <div id="haiku">
+            &nbsp; <br> &nbsp; <br> &nbsp;
+        </div>
+    </div>
+
+    <div id="social_container">
+        <div id="social_stuff">
+
+            <img src="images/social/descript.png">
+
+            <a onclick="email(htmlpoem)" href="javascript:void(0);"><img src="images/social/email.png"></a><a
+                onclick="facebook(fullpoem)" href="javascript:void(0);"><img src="images/social/facebook.png"></a><a
+                onclick="twitter(twitterpoem)" href="javascript:void(0);"><img src="images/social/twitter.png"
+                    id="soc_right"></a><a onclick="barack(fullpoem)" href="javascript:void(0);"><img
+                    src="images/social/barack.png"></a>
+
+        </div>
+    </div>
+
+    <div id="ticker">
+        <p id="wordlist" class="marquee"> </p>
+    </div>
+
+    <div id="generate_box" class="gen_haiku">
+    </div>
+
+    <div id="curtain">
+    </div>
+
+    <div id="topright">
+        <div id="help_me">
+            how it works
+        </div><br>
+        <div id="click_info">
+            <a href="about.html" target="_blank">info</a>
+        </div>
+    </div>
+
+    <div id="help_ticker_container" class="help">
+        <div class="help_inside">
+            The marquee below is a list of terms that can have you flagged as a potential terrorist by the NSA if you
+            use them in electronic communication. Click on it to view the list in its entirety<br>
+            <img src="images/down_arrow.png">
+        </div>
+    </div>
+
+    <div id="help_new_container" class="help">
+        <div class="help_inside">
+            <img src="images/right_arrow.png">
+            Click here to generate a random haiku out of the database of NSA terms
+        </div>
+    </div>
+
+    <div id="help_social_container" class="help">
+        <div class="help_inside">
+            <img src="images/left_arrow.png">
+            Be sure to share your creation on social media (LOL @ NSA)
+        </div>
+    </div>
+
+    <div id="help_haiku_container" class="help">
+        <div class="help_inside">
+            <img src="images/dl_arrow.png">
+            This is where your haiku will show up! You may also click or tap here to generate a fresh poem :)
+        </div>
+    </div>
+
+    <div id="nothing">
+    </div>
+
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
