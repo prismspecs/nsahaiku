@@ -1,5 +1,5 @@
 var greeting = "I made an %23NSAhaiku and you can too! %23NSA";
-var siteURL  = "http://www.NSAhaiku.net";
+var siteURL  = window.location.origin || "https://nsahaiku.graysonearle.com";
 var heyO     = "Hey, @BarackObama. I don't think mass surveillance was a campaign promise. End the unconstitutional %23NSA spying."
 function email(poem) {
 	if (!poem) {
