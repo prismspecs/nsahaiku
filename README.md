@@ -8,7 +8,7 @@ Rather than approaching mass electronic surveillance with doom and gloom, the pr
 
 ---
 
-## 📖 Background & Sources
+## Background and Sources
 
 The vocabulary driving the generator is compiled and syllable-tagged in [`terms.csv`](terms.csv) (over 700 curated entries). The terms originate from two primary sources:
 
@@ -19,7 +19,7 @@ Learn more by visiting `terms.html` and `about.html` directly in the project.
 
 ---
 
-## ⚡ How It Works
+## How It Works
 
 - **Static Frontend**: Built entirely with HTML5, CSS, and client-side JavaScript (jQuery).
 - **Asynchronous Data Loading**: On page load, `js/main.js` fetches [`terms.csv`](terms.csv), parses each keyword and syllable count into arrays, and populates the marquee ticker.
@@ -31,32 +31,27 @@ Learn more by visiting `terms.html` and `about.html` directly in the project.
 
 ---
 
-## 🚀 Running as a GitHub Page
+## Running as a GitHub Page
 
-**Yes, this project is 100% compatible with GitHub Pages!**
+This project is 100% compatible with GitHub Pages.
 
-Because the core application (the haiku generator, dictionary ticker, terms list, and about pages) is purely client-side static HTML, CSS, and JavaScript with no build step required, it can be hosted directly on GitHub Pages for free.
+Because the core application (the haiku generator, dictionary ticker, terms list, and about pages) is purely client-side static HTML, CSS, and JavaScript with no build step required, it can be hosted directly on GitHub Pages.
 
-> **Note on Email Sharing**: Email sharing uses native client-side `mailto:` links with pre-filled haiku text, meaning it works 100% on GitHub Pages without requiring any server or email backend. (The legacy `send_form_email.php` is kept only as an optional artifact).
+> **Note on Email Sharing**: Email sharing uses native client-side `mailto:` links with pre-filled haiku text, meaning it works on GitHub Pages without requiring any server or email backend. (The legacy `send_form_email.php` is kept only as an optional artifact).
 
 ### How to Enable GitHub Pages:
 
-1. Go to your repository settings on GitHub:
+1. Go to repository settings on GitHub:
    `https://github.com/prismspecs/nsahaiku/settings/pages`
 2. Under **Build and deployment**:
    - **Source**: Select `Deploy from a branch`
-   - **Branch**: Select `main` (or your default branch), and choose `/ (root)` folder
+   - **Branch**: Select `main`, and choose `/ (root)` folder
 3. Click **Save**.
-4. In a couple of minutes, your site will be live at:
-   ```text
-   https://prismspecs.github.io/nsahaiku/
-   ```
-
-*(If you attach a custom domain like `nsahaiku.net`, add your CNAME in repo settings or root `CNAME` file).*
+4. The site will be published at your configured GitHub Pages URL or custom domain (e.g. `nsahaiku.graysonearle.com`).
 
 ---
 
-## 💻 Local Development
+## Local Development
 
 To run and preview the project locally, start any static HTTP server from the repository root:
 
@@ -81,7 +76,7 @@ Then navigate to [http://localhost:8080](http://localhost:8080).
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```text
 .
@@ -105,7 +100,7 @@ Then navigate to [http://localhost:8080](http://localhost:8080).
 
 ---
 
-## 📜 Credits & License
+## Credits and License
 
 - **Concept & Code**: [Grayson Earle](https://www.graysonearle.com)
 - **Design Collaborator**: Britt Boyd
