@@ -2,7 +2,16 @@ var greeting = "I made an %23NSAhaiku and you can too! %23NSA";
 var siteURL  = "http://www.NSAhaiku.net";
 var heyO     = "Hey, @BarackObama. I don't think mass surveillance was a campaign promise. End the unconstitutional %23NSA spying."
 function email(poem) {
-	popUp("mail.html?" + poem,704,300);
+	if (!poem) {
+		alert("Generate a haiku first!");
+		return;
+	}
+	var poemText = poem.replace(/\+/g, " ").replace(/\|/g, "\n");
+	var subject = "I made a haiku out of NSA search terms for you";
+	var body = "Dearest friend,\n\nI wrote you a poem out of the database the NSA uses to spy on us. It goes a little something like this...\n\n"
+		+ poemText
+		+ "\n\nYou can make one too by visiting " + siteURL + "!";
+	window.location.href = "mailto:?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
 }
 
 function facebook(poem) {

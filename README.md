@@ -37,7 +37,7 @@ Learn more by visiting `terms.html` and `about.html` directly in the project.
 
 Because the core application (the haiku generator, dictionary ticker, terms list, and about pages) is purely client-side static HTML, CSS, and JavaScript with no build step required, it can be hosted directly on GitHub Pages for free.
 
-> **Note on Email Sharing (`send_form_email.php`)**: GitHub Pages only serves static files. The legacy PHP script `send_form_email.php` used for the optional "email a friend" popup does not execute on GitHub Pages (social sharing via X/Twitter, copying, and client-side mailto links continue to work without a backend).
+> **Note on Email Sharing**: Email sharing uses native client-side `mailto:` links with pre-filled haiku text, meaning it works 100% on GitHub Pages without requiring any server or email backend. (The legacy `send_form_email.php` is kept only as an optional artifact).
 
 ### How to Enable GitHub Pages:
 
